@@ -27,11 +27,12 @@ class SpamTwitter:
         self.twitterApi.update_status(message)
 
     def spam(self):
+        no = 0
         while True:
-            message = "@instagram, user @dejimarquis has an issue that they need your help debugging, but they haven't gotten any response from the team. " +
-            "They have sent emails, used the report an issue button on the app and even sent multiples tweets to you. Please who can help? To reach out, DM @dejimarquis"
+            no = no + 1
+            message = str(no) + "<Enter Message here>"
             self.tweet(message)
-            time.sleep(60 * 60 * 60)
+            time.sleep(60 * 5) # tweets every 5 minutes
 
 if __name__ == '__main__':
     client = SpamTwitter()
