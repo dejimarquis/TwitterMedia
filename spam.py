@@ -6,6 +6,7 @@ class SpamTwitter:
     request_limit = 20
     twitterApi = ""
 
+    # Apply for Twitter API access here https://developer.twitter.com/en/apply-for-access
     # insert your keys and secrets here
     twitter_keys = {
         'consumer_key': "",
